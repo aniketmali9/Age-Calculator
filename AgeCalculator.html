@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <!-- External CSS file linked -->
+    <link rel="stylesheet" href="AgeCalculator.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- Age Calculator Heading -->
+            <div class="top">
+              <h4>Age Calculator</h4>
+            </div>
+            <!-- Input Data for age calculation -->
+            <div class="block">
+                <span class="title">Date</span>
+                <input type="text" class="date" minlength="1" maxlength="2" placeholder="dd" id="date" required>
+            </div>
+            <div class="block">
+                <span class="title">Month</span>
+                <input type="text" class="date" minlength="1" maxlength="2" placeholder="mm" id="month" required>
+            </div>
+            <div class="block">
+                <span class="title">Year</span>
+                <input type="text" class="date" minlength="3" maxlength="4" placeholder="yyyy" id="year" required>
+            </div>
+            <!-- Submit button -->
+            <div class="base">
+                <div class="enter">
+                    <input
+                        type="button"
+                        name="submit"
+                        value="Submit"
+                        onclick="age()"
+                    />
+                </div>
+            </div>
+            <!-- Calculated age result -->
+            <div id="age" class="age"></div>
+            
+            <!-- External Javascript file linked -->
+            <script src="AgeCalculator.js"></script>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
